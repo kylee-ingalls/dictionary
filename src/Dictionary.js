@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import Results from "./Results";
 import "./Dictionary.css"
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState("");
+    let [results, setResults] = useState(null);
 
     function search(event) {
   event.preventDefault();
@@ -13,7 +15,7 @@ export default function Dictionary() {
   fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      setResults(data);
     });
 }
 
@@ -26,6 +28,9 @@ export default function Dictionary() {
             <form onSubmit={search}>
                 <input type="search" onChange={handleKeywordChange} placeholder="Enter a word..." autoFocus={true} />
             </form>
+            
+            <Results results={results} />
+            
         </div>
     );
 }
