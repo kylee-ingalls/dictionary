@@ -3,8 +3,6 @@ import "./Dictionary.css"
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState("");
-    let apiKey = "cb60bbeo7bd602d062ff8d664eta0043";
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
 
     function search(event) {
   event.preventDefault();
