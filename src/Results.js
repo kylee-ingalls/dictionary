@@ -12,7 +12,7 @@ export default function Results(props) {
         <span className="phonetic">{props.results.phonetic}</span>
       </div>
 
-      {props.results.meanings.map((meaning, index) => (
+      {props.results.meanings.slice(0, 3).map((meaning, index) => (
         <Meaning key={index} meaning={meaning} />
       ))}
     </div>
