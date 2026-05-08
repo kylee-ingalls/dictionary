@@ -86,3 +86,16 @@
   border-radius: 20px;
   font-size: 14px;
 }
+
+.Photos {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.Photos img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
