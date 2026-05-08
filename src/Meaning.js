@@ -1,7 +1,7 @@
 export default function Meaning(props) {
   let meaning = props.meaning;
 
-if (!meaning) return null;
+  if (!meaning) return null;
 
   return (
     <div className="Meaning">
@@ -10,7 +10,9 @@ if (!meaning) return null;
       {/* Definition */}
       <div className="section">
         <h4>Definition</h4>
-        <p className="definition">{meaning.definition}</p>
+        <p className="definition">
+          {meaning.definition}
+        </p>
       </div>
 
       {/* Synonyms */}
@@ -20,7 +22,9 @@ if (!meaning) return null;
 
           <ul className="synonyms-list">
             {meaning.synonyms.slice(0, 5).map((synonym, index) => (
-              <li key={index}>{synonym}</li>
+              <li key={index}>
+                {synonym}
+              </li>
             ))}
           </ul>
         </div>
@@ -30,7 +34,9 @@ if (!meaning) return null;
       {meaning.example && (
         <div className="section">
           <h4>Example</h4>
-          <p className="example">"{meaning.example}"</p>
+          <p className="example">
+            "{meaning.example}"
+          </p>
         </div>
       )}
     </div>
