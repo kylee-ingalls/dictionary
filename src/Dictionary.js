@@ -67,7 +67,11 @@ export default function Dictionary() {
       <h1>Search for a word</h1>
 
       <form onSubmit={search}>
+        <label htmlFor="search-input">
+            Search for a word
+        </label>
         <input
+        id="search-input"
           type="search"
           value={keyword}
           onChange={handleKeywordChange}

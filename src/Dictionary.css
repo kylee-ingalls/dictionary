@@ -8,7 +8,7 @@
 .Dictionary input {
   width: 100%;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #797878;
   border-radius: 6px;
   font-size: 18px;
   color: #333;
@@ -32,7 +32,7 @@
 }
 
 .phonetic {
-  color: #885df1;
+  color: #522cb3;
   font-size: 20px;
   margin-top: 5px;
   display: block;
@@ -41,7 +41,7 @@
 .Meaning {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid #bebcbc;
 }
 
 .Meaning h3 {
@@ -55,7 +55,7 @@
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #999;
+  color: #522cb3;
   margin-bottom: 8px;
 }
 
@@ -67,7 +67,7 @@
 
 .example {
   font-style: italic;
-  color: #777;
+  color: #444;
   margin-top: 10px;
 }
 
@@ -81,7 +81,7 @@
 
 .synonyms-list li {
   background: #f4f2fb;
-  color: #885df1;
+  color: #522cb3;
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 14px;
